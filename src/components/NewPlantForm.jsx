@@ -12,7 +12,7 @@ function NewPlantForm({ onAddPlant }) {
     const newPlant = {
       name,
       image,
-      price: Number(price),
+      price,
     };
 
     const response = await fetch("http://localhost:6001/plants", {
